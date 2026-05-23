@@ -1,7 +1,7 @@
 def second_largest(arr):
     largest = float('-inf')
     second = float('-inf')
-
+    # Iterate through the array to find the largest and second largest elements
     for num in arr:
         if num > largest:
             second = largest

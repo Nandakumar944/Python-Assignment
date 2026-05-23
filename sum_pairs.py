@@ -1,10 +1,10 @@
 def find_unique_pairs(arr,target):
     s = set()
     p = set()
-
+    # Iterate through the array to find unique pairs that sum up to the target
     for num in arr:
         c = target - num
-
+        # Check if the complement exists in the set
         if c in s:
             a=tuple(sorted((num,c)))
             p.add(a)
